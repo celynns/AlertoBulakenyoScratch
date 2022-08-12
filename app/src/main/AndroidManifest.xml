@@ -12,6 +12,75 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlertoBulakenyoScratch"
-        tools:targetApi="31"></application>
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".ancmntBody"
+            android:exported="false" />
+        <activity
+            android:name=".Announcement"
+            android:exported="false" />
+        <activity
+            android:name=".completeInfo"
+            android:exported="false" />
+        <activity
+            android:name=".Disaster"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPass"
+            android:exported="false" />
+        <activity
+            android:name=".GetStarted"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Hotlines"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".Map"
+            android:exported="false" />
+        <activity
+            android:name=".Prepare"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenItem"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPass"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Verification"
+            android:exported="false" />
+        <activity
+            android:name=".Walkthrough"
+            android:exported="false" />
+        <activity
+            android:name=".WalkthroughViewPagerAdapter"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
+    </application>
 
 </manifest>
