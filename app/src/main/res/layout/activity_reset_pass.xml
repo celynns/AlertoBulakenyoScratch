@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ResetPass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="RESET PASSWORD"
+            android:textAlignment="center"
+            android:textColor="#003366"
+            app:autoSizeMaxTextSize="80dp"
+            app:autoSizeMinTextSize="30dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="20dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Please enter your new password."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:autoSizeMaxTextSize="25dp"
+            app:autoSizeMinTextSize="20dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/etResetNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edit_text2"
+            android:clickable="true"
+            android:drawableRight="@drawable/reset_baseline_visibility_off_24"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="#003366"
+            android:textColorHint="#8091A3"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/etResetConPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edit_text2"
+            android:clickable="true"
+            android:drawableRight="@drawable/reset_baseline_visibility_off_24"
+            android:hint="Confirm New Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="#003366"
+            android:textColorHint="#8091A3"
+            android:textSize="22dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnResetPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="150dp"
+            android:background="@drawable/rounded_button2"
+            android:padding="10dp"
+            android:stateListAnimator="@null"
+            android:text="RESET PASSWORD"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBackVer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:paddingHorizontal="40dp"
+            android:stateListAnimator="@null"
+            android:text="BACK"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

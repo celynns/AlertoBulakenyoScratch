@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Prepare">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ff5003" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="horizontal"
+        android:paddingTop="40dp">
+
+        <ImageButton
+            android:id="@+id/btnBackHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff5003"
+            android:src="@drawable/back"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="9"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="PREPARE"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:autoSizeMaxTextSize="100dp"
+            app:autoSizeMinTextSize="30dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+</RelativeLayout>

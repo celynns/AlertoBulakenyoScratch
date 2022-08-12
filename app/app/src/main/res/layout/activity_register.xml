@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".register">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="301dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="-55dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/reg_top" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="360dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-50dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="-150dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/reg_bot" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/archivo_black"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:text="Register"
+            android:textColor="#003366"
+            app:autoSizeMaxTextSize="80dp"
+            app:autoSizeMinTextSize="30dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/etRegFname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text"
+            android:hint="First Name"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="#003366"
+            android:textColorHint="#8091A3"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/etRegLname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text"
+            android:hint="Last Name"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="#003366"
+            android:textColorHint="#8091A3"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/etRegUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text"
+            android:hint="Preferred Username"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="#003366"
+            android:textColorHint="#8091A3"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/etRegEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text"
+            android:hint="Email Address"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="#003366"
+            android:textColorHint="#8091A3"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/etRegPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="#003366"
+            android:textColorHint="#8091A3"
+            android:textSize="18dp"
+            android:drawableRight="@drawable/ic_baseline_visibility_off_24"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/etRegConPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edit_text"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="#003366"
+            android:textColorHint="#8091A3"
+            android:textSize="18dp"
+            android:drawableRight="@drawable/ic_baseline_visibility_off_24"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbAgree1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ff5003" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" I read and agree to "
+                android:textColor="#003366"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:textColor="#003366"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbAgree2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ff5003" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" I read and agree to "
+                android:textColor="#003366"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy."
+                android:textColor="#003366"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rounded_button"
+            android:padding="10dp"
+            android:stateListAnimator="@null"
+            android:text="Sign up"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginHorizontal="50dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:text="Already have an account?"
+            android:textColor="#4D657F"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="25dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginHorizontal="50dp"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Log in"
+            android:textColor="#003366"
+            app:autoSizeMaxTextSize="40dp"
+            app:autoSizeMinTextSize="20dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+</RelativeLayout>

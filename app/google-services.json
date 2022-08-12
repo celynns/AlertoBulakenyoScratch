@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "352509176990",
+    "project_id": "alertobulakenyoscratch-a32af",
+    "storage_bucket": "alertobulakenyoscratch-a32af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352509176990:android:96f112dc723f3d7c801f8f",
+        "android_client_info": {
+          "package_name": "com.alertobulakenyoscratch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352509176990-o5pe8jgl2nkos5pt7dhud3cb911hpafg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alertobulakenyoscratch",
+            "certificate_hash": "d989e8401abd79af901392d29dd287457e56a5af"
+          }
+        },
+        {
+          "client_id": "352509176990-ic17ut6p3904tallh3coel8v8rj1uu64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM3K5kzD4q2Zk-xw0T8zVZZxR9jHe63q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352509176990-ic17ut6p3904tallh3coel8v8rj1uu64.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

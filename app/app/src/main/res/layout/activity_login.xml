@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="301dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/login_top" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="360dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-20dp"
+        android:layout_marginBottom="-120dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/login_bot" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp">
+
+        <ImageView
+            android:layout_width="224dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/archivo_black"
+            android:maxLines="1"
+            android:text="WELCOME!"
+            android:textAlignment="center"
+            android:textColor="#003366"
+            app:autoSizeMaxTextSize="80dp"
+            app:autoSizeMinTextSize="30dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/etLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/edit_text"
+            android:hint="Username or Email"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="#003366"
+            android:textColorHint="#8091A3"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/etLoginPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edit_text"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="#003366"
+            android:textColorHint="#8091A3"
+            android:textSize="20dp"
+            android:drawableRight="@drawable/ic_baseline_visibility_off_24"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:id="@+id/tvForgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="30dp"
+            android:paddingStart="10dp"
+            android:text="Forgot Password?"
+            android:textStyle="bold"
+            android:textColor="#8091A3"
+            android:textSize="15dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/rounded_button"
+            android:padding="10dp"
+            android:stateListAnimator="@null"
+            android:text="LOG IN"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="or log in with"
+            android:textAlignment="center"
+            android:textColor="#8091A3"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnGoogle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:scaleType="fitStart"
+                android:src="@drawable/google" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnFB"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:scaleType="fitStart"
+                android:src="@drawable/fb" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnTwt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:scaleType="fitStart"
+                android:src="@drawable/twitter" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:text="Don't have an account?"
+            android:textColor="#4D657F"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="25dp"
+            app:autoSizeMinTextSize="12dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/tvSignup"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Sign up"
+            android:textColor="#003366"
+            app:autoSizeMaxTextSize="40dp"
+            app:autoSizeMinTextSize="20dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform" />
+
+    </LinearLayout>
+
+</RelativeLayout>

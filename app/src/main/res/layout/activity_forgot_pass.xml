@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ForgotPass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/archivo_black"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Forgot Password?"
+            android:textAlignment="center"
+            android:textColor="#003366"
+            app:autoSizeMaxTextSize="80dp"
+            app:autoSizeMinTextSize="30dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="20dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Please enter your registered email address."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:autoSizeMaxTextSize="25dp"
+            app:autoSizeMinTextSize="20dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/etFPemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/edit_text2"
+            android:hint="Email Address"
+            android:maxLines="1"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#8091A3"
+            android:textSize="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/rounded_button2"
+            android:padding="10dp"
+            android:stateListAnimator="@null"
+            android:text="SEND"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvResend"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:autoSizeMaxTextSize="25dp"
+            app:autoSizeMinTextSize="10dp"
+            app:autoSizeStepGranularity="1dp"
+            app:autoSizeTextType="uniform" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button2"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="10dp"
+            android:stateListAnimator="@null"
+            android:text="Proceed"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBackLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:paddingHorizontal="40dp"
+            android:stateListAnimator="@null"
+            android:text="BACK"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
