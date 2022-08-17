@@ -15,7 +15,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class register extends AppCompatActivity {
 
@@ -25,6 +31,8 @@ public class register extends AppCompatActivity {
     TextView tvTerms, tvPrivacy, tvLogin;
     boolean passwordVisible;
     int cb1 = 0, cb2 = 0;
+    private FirebaseAuth fAuth;
+    private EditText email,password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +59,8 @@ public class register extends AppCompatActivity {
         tvTerms = (TextView) findViewById (R.id.tvTerms);
         tvPrivacy = (TextView) findViewById (R.id.tvPrivacy);
         tvLogin = (TextView) findViewById (R.id.tvLogin);
+
+        fAuth = FirebaseAuth.getInstance();
 
         //password visibility
         etRegPass.setOnTouchListener(new View.OnTouchListener() {
@@ -208,8 +218,9 @@ public class register extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_in_left,
                         R.anim.slide_out_right);
             }
-        });
-    }
+        })
+    ;}
+
 
     @Override
     public void onBackPressed()
